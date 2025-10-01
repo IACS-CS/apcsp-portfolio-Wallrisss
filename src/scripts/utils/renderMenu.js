@@ -1,3 +1,7 @@
+import { gsap } from "gsap/gsap-core";
+
+
+
 // src/scripts/utils/renderMenu.js
 export function renderMenu() {
   /* html */
