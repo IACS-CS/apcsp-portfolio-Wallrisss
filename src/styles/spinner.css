@@ -1,0 +1,52 @@
+.spinner-section {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.stop-btn {
+  margin-bottom: 1em;
+  padding: 0.5em 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 600px; /* Adjust to fit your boxes */
+  margin: 0 auto;
+  border: 2px solid #333;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px;
+  background: #444;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2em;
+  pointer-events: none; /* disables clicking */
+  transition: background 0.2s;
+}
+
+.box__inner {
+  width: 90px;
+  height: 90px;
+  background: #333;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box.selected {
+  background: #ffd700;
+  color: #222;
+}
