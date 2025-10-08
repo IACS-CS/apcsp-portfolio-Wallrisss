@@ -1,4 +1,3 @@
-import { gsap } from "gsap";
 
 // Call this function after your spinner HTML is in the DOM
 export function startSpinner() {
