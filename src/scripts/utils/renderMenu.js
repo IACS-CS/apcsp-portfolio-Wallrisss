@@ -6,14 +6,30 @@ export function renderMenu() {
     <!-- code generated in renderMenu.js -->
     <nav>
       <ul>
-        <li><a href="#/">Home</a></li>
-        <li><a href="#/binary-search">Binary Search Project</a></li>
-        <li><a href="#/citations">citations</a></li>
-
+      <ul> boring links<ul>
+      <li><a href="#/">Home</a></li>
+      <li><a href="#/binary-search">Binary Search Project</a></li>
+      <li><a href="#/citations">citations</a></li>
       </ul>
     </nav>
-     import {wheel} from 'https://cdn.jsdelivr.net/npm/spin-wheel@5.0.2/dist/spin-wheel-esm.js';
-``
+    <button id="spin-btn">Spin the Wheel!</button>
+    <div style="
+
+
+      display: flex; 
+      justify-content: center; align-items: stretch; flex-direction: column;">
+      <div class="arrow"
+      style="width: 0; 
+      height: 0; 
+      border-left: 10px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-top: 30px solid red;
+      align-self: center;
+      position: relative; 
+      margin-bottom: -10px;"
+      ></div>
+      <div id="wheel"></div>
+    </div>
     <!-- end code generated in renderMenu.js -->
-  `;
+    `;
 }

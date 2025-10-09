@@ -1,8 +1,13 @@
 import { renderMenu } from "../utils/renderMenu.js";
-import { renderIframe } from "../utils/renderIframe.js";
+
 export function renderCitations() {
   /* html */
-  return `
+
+  return ` 
   <h1>Citations</h1>
+    ${renderMenu()}
+   
+  
+  <h1>Used ai and Mr hinkle for the spinner<h1>
   `
 }

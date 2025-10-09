@@ -2,6 +2,7 @@
 import { renderWelcome } from "./pages/welcome.js";
 import { renderBinarySearch } from "./pages/binarySearch.js";
 import { renderCitations } from "./pages/citations.js";
+import { createWheel } from "./wheel.js";
 
 /* route takes a path and chooses which page to render.
 It is called each time the user clicks on a navigation link */
@@ -21,6 +22,8 @@ export function startRouter() {
   function render() {
     const hash = window.location.hash.replace(/^#\/?/, "/");
     document.getElementById("app").innerHTML = route(hash);
+    // Re-Initialize wheel each time we render!
+    setTimeout(()=>createWheel(),10);
   }
   window.addEventListener("hashchange", render);
   render();
