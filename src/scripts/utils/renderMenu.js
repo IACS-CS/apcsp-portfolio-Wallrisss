@@ -10,6 +10,7 @@ export function renderMenu() {
       <li><a href="#/">Home</a></li>
       <li><a href="#/binary-search">Binary Search Project</a></li>
       <li><a href="#/citations">citations</a></li>
+      <li><a href="#/bomb">bomb</a></li>
       </ul>
     </nav>
     <button id="spin-btn">Spin the Wheel!</button>

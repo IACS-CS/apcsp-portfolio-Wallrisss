@@ -3,6 +3,7 @@ import { renderWelcome } from "./pages/welcome.js";
 import { renderBinarySearch } from "./pages/binarySearch.js";
 import { renderCitations } from "./pages/citations.js";
 import { createWheel } from "./wheel.js";
+import { renderbomb } from "./pages/bomb.js";
 
 /* route takes a path and chooses which page to render.
 It is called each time the user clicks on a navigation link */
@@ -13,6 +14,8 @@ export function route(path) {
     return renderBinarySearch();
   } else if (path==="/citations"){
     return renderCitations()
+  } else if (path==="/bomb"){
+    return renderbomb()
   } else {
     return `<h1>404 Not Found</h1><a href="#/">Back Home</a>`;
   }

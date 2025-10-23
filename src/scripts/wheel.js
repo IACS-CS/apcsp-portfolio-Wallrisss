@@ -15,8 +15,10 @@ export function createWheel() {
       window.location.hash = '#/binary-search';      
     } else if (currentIndex === 2) {
       window.location.hash = '#/citations';      
-    } else {
-      window.location.hash = '#/';            
+    } else if (currentIndex === 3) {
+      window.location.hash = '#/bomb';   
+     } else {
+        window.location.hash = '#/';         
     }
   }
 
@@ -30,6 +32,9 @@ export function createWheel() {
       },
       {
         label: 'citations',
+      },
+       {
+        label: 'bomb',
       },
     ],
     width: 800,
